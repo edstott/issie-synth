@@ -1,7 +1,7 @@
 # issie-synth
 A script for synthesis, place and route on [Issie](https://github.com/tomcl/issie) projects
 
-## Installation
+## Installation (Linux)
 1. Install [Yosys](http://bygone.clairexen.net/yosys/download.html)
 2. Install [nextpnr with iCE40 support](https://github.com/YosysHQ/nextpnr#nextpnr-ice40)
 3. Install issie-synth
@@ -15,7 +15,7 @@ Log in as `user` with password `DECA`. Update issie synth with:
     git pull
   
 ## Usage
-1. Generate a verilog output of your project from Issie with Sheet → Write design as Verilog
+1. Generate a verilog output of your project from Issie with Sheet → Write design as Verilog. Select the option 'Write Synthesis Verilog'
 2. Run `./issie-synth.sh <path to project directory>`
 
 Some examples are included:
