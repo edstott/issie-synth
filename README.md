@@ -26,9 +26,9 @@ Some examples are included:
     ./issie-synth.sh examples/mu0arm
 
 ## Compilation results
-Open `main.log` in the project directory in a text editor to see the compilation report.
+View `main.log` in the project directory to see the compilation report.
 
-A line near the end of the report shopws the maximum clock frequency, for example:
+A line near the end of the report shows the maximum clock frequency, for example:
 
     Info: Max frequency for clock 'clk$SB_IO_IN_$glb_clk': 42.52 MHz (PASS at 12.00 MHz)
 
