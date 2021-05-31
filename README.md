@@ -2,7 +2,7 @@
 A script for synthesis, place and route on [Issie](https://github.com/tomcl/issie) projects
 
 ## Installation (Linux)
-1. Install [Issie v2.0.13](https://github.com/tomcl/issie/releases/tag/v2.0.13) or later (will need to be on your Windows or Mac VM host)
+1. Install [Issie v2.0.15](https://github.com/tomcl/issie/releases/tag/v2.0.15) or later (will need to be on your Windows or Mac VM host)
 2. Install [Yosys](http://bygone.clairexen.net/yosys/download.html)
 3. Install [nextpnr with iCE40 support](https://github.com/YosysHQ/nextpnr#nextpnr-ice40)
 4. Install issie-synth
