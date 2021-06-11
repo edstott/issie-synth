@@ -1,12 +1,13 @@
 # issie-synth
 A script for synthesis, place and route on [Issie](https://github.com/tomcl/issie) projects
 
-## Installation
-1. Install [Yosys](http://bygone.clairexen.net/yosys/download.html)
-2. Install [nextpnr with iCE40 support](https://github.com/YosysHQ/nextpnr#nextpnr-ice40)
-3. Install issie-synth
+## Installation (Linux)
+1. Install [Issie v2.0.15](https://github.com/tomcl/issie/releases/tag/v2.0.15) or later (will need to be on your Windows or Mac VM host)
+2. Install [Yosys](http://bygone.clairexen.net/yosys/download.html)
+3. Install [nextpnr with iCE40 support](https://github.com/YosysHQ/nextpnr#nextpnr-ice40)
+4. Install issie-synth
 
-       git clone https://github.com/edstott/issie-synth.git`
+       git clone https://github.com/edstott/issie-synth.git
 
 Imperial College users can download a [preinstalled VMware Virtual Machine](https://imperiallondon-my.sharepoint.com/:u:/g/personal/estott_ic_ac_uk/ETfs6pGuxt5EqaUugjaZpmkBlx7b5Fm35V-pTtjpjOAYeg?e=4ifSLO). 
 Log in as `user` with password `DECA`. Update issie synth with:
@@ -15,7 +16,7 @@ Log in as `user` with password `DECA`. Update issie synth with:
     git pull
   
 ## Usage
-1. Generate a verilog output of your project from Issie with Sheet → Write design as Verilog
+1. Generate a verilog output of your project from Issie with Sheet → Write design as Verilog. Select the option 'Write Synthesis Verilog'
 2. Run `./issie-synth.sh <path to project directory>`
 
 Some examples are included:
@@ -25,9 +26,9 @@ Some examples are included:
     ./issie-synth.sh examples/mu0arm
 
 ## Compilation results
-Open `main.log` in the project directory in a text editor to see the compilation report.
+View `main.log` in the project directory to see the compilation report.
 
-A line near the end of the report shopws the maximum clock frequency, for example:
+A line near the end of the report shows the maximum clock frequency, for example:
 
     Info: Max frequency for clock 'clk$SB_IO_IN_$glb_clk': 42.52 MHz (PASS at 12.00 MHz)
 
