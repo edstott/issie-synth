@@ -10,7 +10,7 @@ cd $1
 #Remove "q = 0;" lines from source files
 for VFILE in *.v
 do
-	grep -v 'q = 0;' "${VFILE}" > "${VFILE}_"
+	grep -v '^\W*q = 0;' "${VFILE}" > "${VFILE}_"
 	mv "${VFILE}_" "${VFILE}"
 done
 
